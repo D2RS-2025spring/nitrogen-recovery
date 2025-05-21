@@ -5,7 +5,7 @@
   require(data.table)
   require(metafor)
 
-  setwd("F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业")
+  setwd("D:/coursework/information/figure")
   
   # empty environment
   rm(list=ls())
@@ -113,7 +113,7 @@
 # derive the meta-analytical model
 
     # read data
-    d1 <- readxl::read_xlsx('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/Source Data.xlsx',sheet = "Figure4")
+    d1 <- readxl::read_xlsx('D:/coursework/information/figure/Source Data.xlsx',sheet = "Figure4")
     d1 <- as.data.table(d1)
 
 
@@ -306,7 +306,7 @@
     terra::crs(r.fin) <- 'epsg:4326'
 
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_4.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/coursework/information/figure/tif/scenario_4.tif', overwrite = TRUE)
 
     ############################################## scenario 5 (combination_lower boundaries of 95% CI)################################################################
     # make local copy
@@ -361,7 +361,7 @@
     terra::crs(r.fin) <- 'epsg:4326'
 
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_5.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/coursework/information/figure/tif/scenario_5.tif', overwrite = TRUE)
 
     ############################################## scenario 6 (combination_upper boundaries of 95% CI)################################################################
     # make local copy
@@ -416,7 +416,7 @@
     terra::crs(r.fin) <- 'epsg:4326'
 
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_6.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/coursework/information/figure/tif/scenario_6.tif', overwrite = TRUE)
 
     # ############################################## scenario 4 (combination_SE)################################################################
     # # scenario 4. the combination of measures with change in EE, CF, RFR, RFT, BC, RES, CC, ROT
@@ -499,7 +499,7 @@
     theme_set(theme_bw())
 
     # get the raster to plot
-    r4 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_4.tif')
+    r4 <- terra::rast('D:/coursework/information/figure/tif/scenario_4.tif')
 
     # convert to data.frame
     r4.p <- as.data.frame(r4,xy=TRUE)
@@ -533,7 +533,7 @@
     theme_set(theme_bw())
 
     # get the raster to plot
-    r5 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_5.tif')
+    r5 <- terra::rast('D:/coursework/information/figure/tif/scenario_5.tif')
 
     # convert to data.frame
     r5.p <- as.data.frame(r5,xy=TRUE)
@@ -566,7 +566,7 @@
     theme_set(theme_bw())
 
     # get the raster to plot
-    r6 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_6.tif')
+    r6 <- terra::rast('D:/coursework/information/figure/tif/scenario_6.tif')
 
     # convert to data.frame
     r6.p <- as.data.frame(r6,xy=TRUE)
@@ -599,6 +599,6 @@
 
     p
 
-    ggsave(p, file = "F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/picture/Figure_4.png",width = 183,height = 247, units = "mm")
+    ggsave(p, file = "D:/coursework/information/figure/picture/Figure_4.png",width = 183,height = 247, units = "mm")
 
 

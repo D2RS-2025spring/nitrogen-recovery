@@ -4,7 +4,7 @@ require(terra)
   require(metafor)
 
     # what rasters are in data
-    rfiles <- list.files('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/data', pattern = 'tif$',full.names = TRUE)
+    rfiles <- list.files('D:/date/homework/data', pattern = 'tif$',full.names = TRUE)
     rfiles <- rfiles[!grepl('cropland',rfiles)]
 
     # read in raster files
@@ -55,7 +55,7 @@ require(terra)
 # derive the meta-analytical model
 
     # read data  
-    d1 <- readxl::read_xlsx('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/Source Data.xlsx',sheet = "FigureS5")
+    d1 <- readxl::read_xlsx('D:/date/homework/Source Data.xlsx',sheet = "FigureS5")
     d1 <- as.data.table(d1)
 
     
@@ -248,7 +248,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI0.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI0.tif', overwrite = TRUE)
     
     ############################################## scenario SI1 (CF) ################################################################
     # scenario SI1. the  combination of measures with change in Combined fertilizer (CF vs. MF)
@@ -305,7 +305,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI1.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI1.tif', overwrite = TRUE)
     
     
     ############################################## scenario SI2 (OF) ################################################################
@@ -362,7 +362,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI2.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI2.tif', overwrite = TRUE)
     
     
     ############################################## scenario SI3 (RFP) ################################################################
@@ -419,7 +419,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI3.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI3.tif', overwrite = TRUE)
     
     
     
@@ -477,7 +477,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI4.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI4.tif', overwrite = TRUE)
     
     
     
@@ -535,7 +535,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI5.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI5.tif', overwrite = TRUE)
     
     
   
@@ -593,7 +593,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI7.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI7.tif', overwrite = TRUE)
     
     
     ############################################## scenario SI8 (CC/ROT) ################################################################
@@ -650,7 +650,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI8.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_SI8.tif', overwrite = TRUE)
     
   
     ####################################################################################################################################################    
@@ -708,7 +708,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_1.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_1.tif', overwrite = TRUE)
     
     
     ############################################## scenario 2 (crop management)################################################################
@@ -766,7 +766,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_2.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_2.tif', overwrite = TRUE)
     
     
     ############################################## scenario 3 (NT/RT) ################################################################
@@ -823,7 +823,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_3.tif', overwrite = TRUE)
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_3.tif', overwrite = TRUE)
     
     
     ############################################## scenario 4 (combination)################################################################
@@ -880,7 +880,7 @@ require(terra)
     terra::crs(r.fin) <- 'epsg:4326'
     
     # write as output
-    terra::writeRaster(r.fin,'F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_4.tif', overwrite = TRUE)   
+    terra::writeRaster(r.fin,'D:/date/homework/tif/scenario_4.tif', overwrite = TRUE)   
     
 ###############################################################################################################################
     # plotting
@@ -898,7 +898,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r10 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI0.tif')
+    r10 <- terra::rast('D:/date/homework/tif/scenario_SI0.tif')
     
     # convert to data.frame
     r10.p <- as.data.frame(r10,xy=TRUE)
@@ -939,7 +939,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r11 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI1.tif')
+    r11 <- terra::rast('D:/date/homework/tif/scenario_SI1.tif')
     
     # convert to data.frame
     r11.p <- as.data.frame(r11,xy=TRUE)
@@ -976,7 +976,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r12 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI2.tif')
+    r12 <- terra::rast('D:/date/homework/tif/scenario_SI2.tif')
     
     # convert to data.frame
     r12.p <- as.data.frame(r12,xy=TRUE)
@@ -1012,7 +1012,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r13 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI3.tif')
+    r13 <- terra::rast('D:/date/homework/tif/scenario_SI3.tif')
     
     # convert to data.frame
     r13.p <- as.data.frame(r13,xy=TRUE)
@@ -1049,7 +1049,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r14 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI4.tif')
+    r14 <- terra::rast('D:/date/homework/tif/scenario_SI4.tif')
     
     # convert to data.frame
     r14.p <- as.data.frame(r14,xy=TRUE)
@@ -1087,7 +1087,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r15 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI5.tif')
+    r15 <- terra::rast('D:/date/homework/tif/scenario_SI5.tif')
     
     # convert to data.frame
     r15.p <- as.data.frame(r15,xy=TRUE)
@@ -1124,7 +1124,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r17 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI7.tif')
+    r17 <- terra::rast('D:/date/homework/tif/scenario_SI7.tif')
     
     # convert to data.frame
     r17.p <- as.data.frame(r17,xy=TRUE)
@@ -1162,7 +1162,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r18 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_SI8.tif')
+    r18 <- terra::rast('D:/date/homework/tif/scenario_SI8.tif')
     
     # convert to data.frame
     r18.p <- as.data.frame(r18,xy=TRUE)
@@ -1199,7 +1199,7 @@ require(terra)
                     labels = c("a", "b","c","d","e","f","g","h"), font.label=list(size=28),hjust = -0.2, vjust = 1)
     p_S5
     
-    ggsave(p_S5, file = "F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/picture/Figure_S5.png",width = 410,height = 197, units = "mm")
+    ggsave(p_S5, file = "D:/date/homework/picture/Figure_S5.png",width = 410,height = 197, units = "mm")
     
     ######################################### scenario_1 (optimal nutrient management) ##########################################################
     # set theme
@@ -1244,7 +1244,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r2 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_2.tif')
+    r2 <- terra::rast('D:/date/homework/tif/scenario_2.tif')
     
     # convert to data.frame
     r2.p <- as.data.frame(r2,xy=TRUE)
@@ -1278,7 +1278,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r3 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_3.tif')
+    r3 <- terra::rast('D:/date/homework/tif/scenario_3.tif')
     
     # convert to data.frame
     r3.p <- as.data.frame(r3,xy=TRUE)
@@ -1314,7 +1314,7 @@ require(terra)
     theme_set(theme_bw())
     
     # get the raster to plot
-    r4 <- terra::rast('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/tif/scenario_4.tif')
+    r4 <- terra::rast('D:/date/homework/tif/scenario_4.tif')
     
     # convert to data.frame
     r4.p <- as.data.frame(r4,xy=TRUE)
@@ -1348,6 +1348,6 @@ require(terra)
                  labels = c("a", "b","c","d"), font.label=list(size=28),hjust = -0.2, vjust = 1)
     p
     
-    ggsave(p, file = "F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/picture/Figure_4.png",width = 410,height = 197, units = "mm")
+    ggsave(p, file = "D:/date/homework/picture/Figure_4.png",width = 410,height = 197, units = "mm")
     
     

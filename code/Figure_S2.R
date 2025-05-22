@@ -2,7 +2,7 @@
 library(data.table); library(gridExtra); library(cowplot)
 
 # load the data file
-d1 <- readxl::read_xlsx('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/Source Data.xlsx',sheet = "FigureS2")
+d1 <- readxl::read_xlsx('D:/date/homework/Source Data.xlsx',sheet = "FigureS2")
 d1 <- as.data.table(d1)
 
 # make plots
@@ -40,4 +40,4 @@ p6 <- ggplot(data = d1, aes(x=n_dose))+
 #3*4
 plot_grid(p1, p2, p3, p4, p5, p6, ncol=2, nrow=3, labels= c("a", "b", "c", "d", "e", "f"), label_size=28, label_fontfamily = "Arial", label_fontface = "bold", label_colour = "black", label_x = -0.01, label_y = 1.02)
 
-ggsave(file = "F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/picture/Figure_S2.png",width = 410,height = 297, units = "mm")
+ggsave(file = "D:/date/homework/picture/Figure_S2.png",width = 410,height = 297, units = "mm")

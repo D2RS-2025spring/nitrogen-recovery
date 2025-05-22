@@ -8,7 +8,7 @@ library(metagear)
 library(GGally)
 
 # read data
-d1 <- readxl::read_xlsx('F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/Source Data.xlsx',sheet = "FigureS3")
+d1 <- readxl::read_xlsx('D:/coursework/information/figure/Source Data.xlsx',sheet = "FigureS3")
 d1 <- as.data.table(d1)
 
 d2<-d1
@@ -81,4 +81,4 @@ ggpairs(d3, lower = list(continuous = wrap("cor", size = 8,color="#E64B35B2")),
   theme(axis.text=element_text(colour='black',size=18, face="bold"), strip.text = element_text(color="black", size = 18, face="bold"))+
   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
 
-ggsave(file = "F:/研究生/研究生课程/数据驱动与可重复性研究/小组作业/picture/Figure_S3.png",width = 410,height = 297, units = "mm")
+ggsave(file = "D:/coursework/information/figure/picture/Figure_S3.png",width = 410,height = 297, units = "mm")

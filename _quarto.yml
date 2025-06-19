@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "氮利用用效率论文图片复现"
+  author: "严婉莹 等"
+  date: now
+  chapters:
+    - index.qmd
+    - fig-1.qmd
+    - fig-2.qmd
+    - fig-3.qmd
+    - fig-4.qmd
+    - fig-5.qmd
+    - fig-S2.qmd
+    - fig-S3.qmd
+    - fig-S4.qmd
+    - fig-S5.qmd
+    - table.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    fig-width: 16
+
+
